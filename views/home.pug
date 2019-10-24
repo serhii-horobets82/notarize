@@ -13,3 +13,28 @@ block content
       i(style={'font-size': '70px',color: 'gray'}).fas.fa-file-word
       h2 Document Preparation Tools
       p Our document editing and preparation tools reduce signing time and errors.
+
+  form(action='/document/acknowledgment', method='POST')    
+    input(type='hidden', name='_csrf', value=_csrf)
+    .row    
+      .offset-md-3.col-md-12.pt-5  
+        button.col-md-6.btn.btn-primary(type='submit')
+          i.far.fa-file-word
+          | Create Acknowledgment document
+  form(action='/document/standard-lease-agreement', method='POST')              
+    input(type='hidden', name='_csrf', value=_csrf)
+    .row    
+      .offset-md-3.col-md-12.pt-2  
+        button.col-md-6.btn.btn-primary(type='submit')
+          i.far.fa-file-word
+          | Create Standard Lease Agreement document
+  form(action='/document/rental-approval-letter', method='POST')              
+    input(type='hidden', name='_csrf', value=_csrf)
+    .row    
+      .offset-md-3.col-md-12.pt-2  
+        button.col-md-6.btn.btn-primary(type='submit')
+          i.far.fa-file-word
+          | Create Approved Tenant Letter         
+
+
+          
